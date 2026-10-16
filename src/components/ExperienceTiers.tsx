@@ -79,8 +79,8 @@ export const ExperienceTiers: React.FC<ExperienceTiersProps> = ({ onSelectTier }
                 Membership <span className="text-gold-gradient">Experiences &amp; VIP Programs</span>
               </h2>
             </div>
-            <div className="lg:col-span-4 lg:text-right">
-              <p className="text-xs sm:text-sm text-[#F7F4EF]/70 font-light">
+            <div className="lg:col-span-4 text-left">
+              <p className="text-xs sm:text-sm text-[#F7F4EF]/70 font-light text-left">
                 We accept a strictly limited cohort of four clients per quarter to ensure bespoke craftsmanship.
               </p>
             </div>

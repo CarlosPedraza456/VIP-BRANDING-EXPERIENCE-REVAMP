@@ -77,7 +77,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </span>
         </div>
 
-        {/* Main Title with Gradient and Cinzel Font */}
+        {/* Main Title with Gradient and Fira Sans Font */}
         <h1 className="font-serif-luxury text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.08] text-balance mb-6 max-w-4xl">
           <span className="block text-[#FFFFFF] drop-shadow-sm">
             ELITE ENTREPRENEUR &amp;

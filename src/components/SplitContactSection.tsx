@@ -46,8 +46,8 @@ export const SplitContactSection: React.FC = () => {
                 Direct <span className="text-gold-gradient">Contact &amp; Private Intake</span>
               </h2>
             </div>
-            <div className="lg:col-span-4 lg:text-right">
-              <p className="text-xs sm:text-sm text-[#FDFBF7]/70 font-light">
+            <div className="lg:col-span-4 text-left">
+              <p className="text-xs sm:text-sm text-[#FDFBF7]/70 font-light text-left">
                 Connect directly with Rey Perez's executive admissions team at AMP CONCEPTS INC.
               </p>
             </div>

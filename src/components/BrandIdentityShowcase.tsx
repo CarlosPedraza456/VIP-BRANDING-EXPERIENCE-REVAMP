@@ -91,8 +91,8 @@ export const BrandIdentityShowcase: React.FC = () => {
                 THE ARCHITECTURE OF <span className="gold-gradient-text">VIP BRANDING</span>
               </h2>
             </div>
-            <div className="lg:col-span-4 lg:text-right">
-              <p className="font-body text-xs sm:text-sm text-[#F7F4EF]/75 leading-relaxed font-light">
+            <div className="lg:col-span-4 text-left">
+              <p className="font-body text-xs sm:text-sm text-[#F7F4EF]/75 leading-relaxed font-light text-left">
                 High-precision visual guidelines designed to project restrained opulence, undisputed authority, and executive distinction.
               </p>
             </div>
@@ -274,13 +274,13 @@ export const BrandIdentityShowcase: React.FC = () => {
               <div className="p-6 rounded-sm bg-[#0B0B0B] border border-[#1E1E1E]">
                 <div className="flex items-center justify-between text-xs text-[#DDA83B] font-brand-sans mb-3 pb-2 border-b border-[#1E1E1E]">
                   <span className="font-bold uppercase tracking-wider">Primary Headings (H1/H2)</span>
-                  <span className="font-mono text-[10px]">Cinzel Display Serif</span>
+                  <span className="font-mono text-[10px]">Fira Sans Display</span>
                 </div>
                 <div className="font-serif-luxury text-3xl font-bold text-white my-4 leading-tight">
                   VIP BRANDING
                 </div>
                 <p className="text-xs text-[#F7F4EF]/60 leading-relaxed font-body">
-                  Classical Roman capitals with modern proportions. Conveys sovereignty, heritage, and uncompromising permanence.
+                  Modern, authoritative sans-serif hierarchy with crisp geometric precision. Conveys bold executive presence and uncompromising clarity.
                 </p>
               </div>
 

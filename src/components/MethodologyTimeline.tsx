@@ -58,8 +58,8 @@ export const MethodologyTimeline: React.FC = () => {
                 THE VIP ASCENSION <span className="gold-gradient-text">METHODOLOGY</span>
               </h2>
             </div>
-            <div className="lg:col-span-4 lg:text-right">
-              <p className="font-body text-xs sm:text-sm text-[#F7F4EF]/75 leading-relaxed font-light">
+            <div className="lg:col-span-4 text-left">
+              <p className="font-body text-xs sm:text-sm text-[#F7F4EF]/75 leading-relaxed font-light text-left">
                 A proven, confidential execution framework that elevates executive influence into institutional permanence.
               </p>
             </div>

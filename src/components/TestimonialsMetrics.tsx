@@ -57,8 +57,8 @@ export const TestimonialsMetrics: React.FC = () => {
                 Listen to our <span className="text-gold-gradient">VIP Clients</span>
               </h2>
             </div>
-            <div className="lg:col-span-5 lg:text-right">
-              <p className="font-body text-xs sm:text-sm text-[#F7F4EF]/75 leading-relaxed">
+            <div className="lg:col-span-5 text-left">
+              <p className="font-body text-xs sm:text-sm text-[#F7F4EF]/75 leading-relaxed text-left">
                 Direct insights and transformational breakthroughs shared by elite entrepreneurs who attended the VIP Branding Experience.
               </p>
             </div>

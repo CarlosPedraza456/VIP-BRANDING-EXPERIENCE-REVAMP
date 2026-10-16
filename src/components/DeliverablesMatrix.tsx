@@ -161,8 +161,8 @@ export const DeliverablesMatrix: React.FC<{ onOpenConsultation: () => void }> = 
                 Cinematic <span className="gold-gradient-text">Production Deliverables</span>
               </h2>
             </div>
-            <div className="lg:col-span-4 lg:text-right">
-              <p className="text-xs sm:text-sm text-[#F7F4EF]/70 font-light">
+            <div className="lg:col-span-4 text-left">
+              <p className="text-xs sm:text-sm text-[#F7F4EF]/70 font-light text-left">
                 All marketing, video, photography, and social assets produced on-site during the VIP experience.
               </p>
             </div>

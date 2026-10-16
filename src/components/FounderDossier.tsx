@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Award, Heart, Mic, Tv, ArrowRight, Linkedin, Instagram, Twitter, Facebook, Play, X } from 'lucide-react';
+import { Award, Heart, Mic, Tv, ArrowRight, Linkedin, Instagram, Facebook, Youtube, Play, X } from 'lucide-react';
 import { ParallaxHorizontalWrapper } from './ParallaxHorizontalWrapper';
 import { VipCrestEmblem } from './BrandIcons';
 import { SectionSparkleCanvas } from './SectionSparkleCanvas';
@@ -31,8 +31,8 @@ export const FounderDossier: React.FC<{ onOpenConsultation: () => void }> = ({
                 Meet the <span className="text-gold-gradient">Global Branding Expert</span>
               </h2>
             </div>
-            <div className="lg:col-span-4 lg:text-right">
-              <p className="text-xs sm:text-sm text-[#F7F4EF]/70 font-light">
+            <div className="lg:col-span-4 text-left">
+              <p className="text-xs sm:text-sm text-[#F7F4EF]/70 font-light text-left">
                 Over two decades creating celebrity brands for top-tier leaders and business owners worldwide.
               </p>
             </div>
@@ -48,14 +48,14 @@ export const FounderDossier: React.FC<{ onOpenConsultation: () => void }> = ({
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-tr from-[#DDA83B]/40 via-[#8C704B]/20 to-[#DDA83B]/60 rounded-sm blur-sm group-hover:blur-md transition-all duration-500 opacity-80" />
 
-                <div className="relative bg-[#141414] border border-[#DDA83B]/40 rounded-sm overflow-hidden shadow-2xl">
+                <div className="relative ghl-portrait-wrapper bg-[#141414] border border-[#DDA83B]/40 rounded-sm overflow-hidden shadow-2xl">
                   <div className="aspect-[4/5] relative bg-gradient-to-b from-[#1C1C1C] via-[#121212] to-[#0A0A0A] flex flex-col items-center justify-center p-8 overflow-hidden">
                     <img 
                       src="/src/assets/images/executive_portrait_boardroom_1791321344990.jpg" 
                       alt="Rey Perez - Global Branding Expert" 
                       className="absolute inset-0 w-full h-full object-cover object-center filter brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/30 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/70 to-transparent" />
 
                     {/* Bottom Floating Badge */}
                     <div className="absolute bottom-6 left-6 right-6 p-4 rounded-sm bg-black/85 backdrop-blur-md border border-[#DDA83B]/40 shadow-xl">
@@ -148,47 +148,58 @@ export const FounderDossier: React.FC<{ onOpenConsultation: () => void }> = ({
                   </button>
                 </div>
 
-                {/* Social Connect Strip */}
-                <div className="pt-4 border-t border-white/10 flex items-center justify-between">
+                {/* Social Connect Strip - Aligned to Right */}
+                <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                   <span className="text-[10px] uppercase tracking-widest text-[#DDA83B] font-bold">
                     Get Socially Connected With Rey:
                   </span>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center justify-end gap-2 ml-auto">
                     <a
-                      href="https://www.linkedin.com"
+                      href="https://www.linkedin.com/in/reyperez/"
                       target="_blank"
                       rel="noreferrer"
-                      className="p-2 rounded-sm bg-[#181818] border border-white/10 hover:border-[#DDA83B] text-[#F7F4EF]/70 hover:text-[#DDA83B] transition-colors"
+                      className="p-2 rounded-sm bg-[#181818] border border-white/10 hover:border-[#DDA83B] text-[#F7F4EF]/70 hover:text-[#DDA83B] transition-colors flex items-center justify-center"
                       title="LinkedIn"
                     >
                       <Linkedin className="w-3.5 h-3.5" />
                     </a>
                     <a
-                      href="https://www.instagram.com"
+                      href="https://www.instagram.com/reyperez360/"
                       target="_blank"
                       rel="noreferrer"
-                      className="p-2 rounded-sm bg-[#181818] border border-white/10 hover:border-[#DDA83B] text-[#F7F4EF]/70 hover:text-[#DDA83B] transition-colors"
+                      className="p-2 rounded-sm bg-[#181818] border border-white/10 hover:border-[#DDA83B] text-[#F7F4EF]/70 hover:text-[#DDA83B] transition-colors flex items-center justify-center"
                       title="Instagram"
                     >
                       <Instagram className="w-3.5 h-3.5" />
                     </a>
                     <a
-                      href="https://www.twitter.com"
+                      href="https://x.com/thereyperez360"
                       target="_blank"
                       rel="noreferrer"
-                      className="p-2 rounded-sm bg-[#181818] border border-white/10 hover:border-[#DDA83B] text-[#F7F4EF]/70 hover:text-[#DDA83B] transition-colors"
-                      title="Twitter"
+                      className="p-2 rounded-sm bg-[#181818] border border-white/10 hover:border-[#DDA83B] text-[#F7F4EF]/70 hover:text-[#DDA83B] transition-colors flex items-center justify-center"
+                      title="X"
                     >
-                      <Twitter className="w-3.5 h-3.5" />
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                      </svg>
                     </a>
                     <a
-                      href="https://www.facebook.com"
+                      href="https://www.facebook.com/iAMPyourBrand"
                       target="_blank"
                       rel="noreferrer"
-                      className="p-2 rounded-sm bg-[#181818] border border-white/10 hover:border-[#DDA83B] text-[#F7F4EF]/70 hover:text-[#DDA83B] transition-colors"
+                      className="p-2 rounded-sm bg-[#181818] border border-white/10 hover:border-[#DDA83B] text-[#F7F4EF]/70 hover:text-[#DDA83B] transition-colors flex items-center justify-center"
                       title="Facebook"
                     >
                       <Facebook className="w-3.5 h-3.5" />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/playlist?list=PLh5pYpdwVc9maip3i-THty2Gg5OAqLn8i"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="p-2 rounded-sm bg-[#181818] border border-white/10 hover:border-[#DDA83B] text-[#F7F4EF]/70 hover:text-[#DDA83B] transition-colors flex items-center justify-center"
+                      title="YouTube"
+                    >
+                      <Youtube className="w-3.5 h-3.5" />
                     </a>
                   </div>
                 </div>

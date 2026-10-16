@@ -26,9 +26,15 @@ export const VipExperienceBriefing: React.FC<VipExperienceBriefingProps> = ({
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
 
   return (
-    <section id="vip-experience-briefing" className="py-24 sm:py-32 relative overflow-hidden bg-gradient-to-b from-[#14120F] via-[#0E0E0E] to-[#0A0A0A] border-t border-b border-[#DDA83B]/20">
+    <section id="vip-experience-briefing" className="py-24 sm:py-32 relative overflow-hidden isolate bg-gradient-to-b from-[#14120F] via-[#0E0E0E] to-[#0A0A0A] border-t border-b border-[#DDA83B]/30 ghl-briefing-section ghl-sparkles-bg">
+      {/* Background container for dual intense moving flares (strictly behind content at z-0 with both animations) */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div className="absolute top-[15%] left-[10%] w-[750px] h-[420px] bg-[radial-gradient(ellipse_at_center,_rgba(221,168,59,0.45)_0%,_rgba(221,168,59,0.15)_55%,_transparent_80%)] blur-[120px] rounded-full animate-flare-heartbeat animate-float-slow" />
+        <div className="absolute bottom-[15%] right-[10%] w-[800px] h-[450px] bg-[radial-gradient(ellipse_at_center,_rgba(245,211,114,0.4)_0%,_rgba(221,168,59,0.12)_55%,_transparent_80%)] blur-[130px] rounded-full animate-flare-heartbeat animate-float-slow" />
+      </div>
+
       {/* Animated luxury ambient sparkles / destellos background */}
-      <SectionSparkleCanvas density="medium" glowIntensity="high" />
+      <SectionSparkleCanvas density="medium" glowIntensity="high" className="absolute inset-0 pointer-events-none z-0" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Centered Section Header with Zoom/Fade Dynamics */}
@@ -77,7 +83,7 @@ export const VipExperienceBriefing: React.FC<VipExperienceBriefingProps> = ({
             <div className="relative z-10 my-10 text-center flex flex-col items-center justify-center">
               <button
                 onClick={() => setIsVideoModalOpen(true)}
-                className="relative group/btn flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gold-gradient text-black shadow-[0_0_50px_rgba(221,168,59,0.55)] transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer"
+                className="relative group/btn ghl-play-btn-pulse flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gold-gradient text-black shadow-[0_0_50px_rgba(221,168,59,0.55)] transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer"
                 aria-label="Play Video with Rey Perez"
               >
                 <span className="absolute inset-0 rounded-full border-2 border-white/60 animate-ping opacity-30" />

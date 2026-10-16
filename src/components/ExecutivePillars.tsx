@@ -33,7 +33,7 @@ export const ExecutivePillars: React.FC = () => {
       deliverables: [
         'Primary Monogram, Stacked Seal & Circular Crest Vectors',
         'Editorial Print & Digital Brand Guidelines Book',
-        'Curated Typography System (Cinzel, Montserrat, Inter)',
+        'Curated Typography System (Fira Sans, Montserrat, Inter)',
         'Bespoke Stationery for Diplomatic & Private Jet Collateral',
       ],
       impact: 'Immediate recognition of executive distinction across all touchpoints',
@@ -85,8 +85,8 @@ export const ExecutivePillars: React.FC = () => {
                 THE 4 PILLARS OF <span className="gold-gradient-text">SOVEREIGN AUTHORITY</span>
               </h2>
             </div>
-            <div className="lg:col-span-4 lg:text-right">
-              <p className="font-body text-xs sm:text-sm text-[#F7F4EF]/75 leading-relaxed font-light">
+            <div className="lg:col-span-4 text-left">
+              <p className="font-body text-xs sm:text-sm text-[#F7F4EF]/75 leading-relaxed font-light text-left">
                 A multi-dimensional approach designed exclusively for visionary founders, chairs, and industry pioneers.
               </p>
             </div>
